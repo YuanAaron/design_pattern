@@ -16,8 +16,10 @@ public class Test {
         resize(rectangle);
 
         Square square=new Square();
-        square.setLength(10);
-        resize(square);
+//        square.setLength(10);
+//        resize(square); //报错
     }
 
+    //在基类Quadrange类中没有赋值方法，因此类似于Test的resize（）方法不可能适用于Quadrangle类型，
+    //而只能适用于具体子类Rectangle和Square，因此里氏替换原则不可能被破坏了。
 }
