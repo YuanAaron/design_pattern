@@ -1,7 +1,5 @@
 package com.oshacker.design.principle.compositereuse;
 
-public class DBConnection {
-    public String getConnection() {
-        return "MySQL的数据库连接";
-    }
+public abstract class DBConnection {
+    public abstract String getConnection();
 }

@@ -1,8 +1,14 @@
 package com.oshacker.design.principle.compositereuse;
 
-public class ProductDAO extends DBConnection {
+public class ProductDAO {
+    private DBConnection dbConnection;
+
+    public void setDbConnection(DBConnection dbConnection) {
+        this.dbConnection=dbConnection;
+    }
+
     public void addProduct() {
-        String conn = super.getConnection();
+        String conn = dbConnection.getConnection();
         System.out.println("使用"+conn+"增加产品");
     }
 }
