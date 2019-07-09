@@ -8,9 +8,9 @@ public class Test {
         System.out.println("后端设计模式课程end...");
 
         System.out.println("前端课程start...");
-        ACourse feCourse=new FECourse();
+        //某门前端课程既可以编写手记，也可以不编写手记
+        ACourse feCourse=new FECourse(true);
         feCourse.makeCourse();
         System.out.println("前端课程end...");
-
     }
 }
