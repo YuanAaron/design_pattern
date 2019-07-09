@@ -8,6 +8,6 @@ public class Test {
 
         //Target的另一种具体实现通过Adapter移交给了Adaptee
         Target adapterTarget=new Adapter();
-        target.request();
+        adapterTarget.request();
     }
 }
